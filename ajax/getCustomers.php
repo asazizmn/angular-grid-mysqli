@@ -1,5 +1,5 @@
 <?php
-include('../includes/config.php');
+include('../includes/cnfg.php');
 
 $query="select distinct c.customerName, c.addressLine1, c.city, c.state, c.postalCode, c.country, c.creditLimit from customers c order by c.customerNumber";
 $result = $mysqli->query($query) or die($mysqli->error.__LINE__);
